@@ -15,13 +15,13 @@ public class Station {
         if (vehicules.size() < 10) {
             vehicules.add(vehicule);
         } else {
-            System.out.println("La station est pleine. Impossible d'ajouter plus de véhicules.");
+            System.out.println("La station est pleine");
         }
     }
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder("Station: " + nom + "\nVéhicules en cours de traitement:\n");
+        StringBuilder result = new StringBuilder("Station: " + nom + "\n");
         for (Vehicule vehicule : vehicules) {
             result.append(vehicule.toString()).append("\n");
         }
